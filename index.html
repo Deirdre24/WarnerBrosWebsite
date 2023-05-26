@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WARNER BROS WEBSITE</title>
+        <link rel="stylesheet" href="WB SITE STYLESHEET.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+       
+    </head>
+    <style>
+        .slide1 {
+    background-image: url(Avatar2image.png);
+}
+ 
+.slide2 {
+    background-image: url(dune.jpg);
+}
+ 
+.slide3 {
+    background-image: url(turning-red.jpeg);
+}
+.slide4 {
+    background-image: url(MEG2.jpg);
+}
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+ 
+#arrow-left {
+    border-width: 20px 30px 20px 0;
+    border-color: transparent #a3a3a3 transparent transparent;
+    left: 0;
+    margin-left: 20px;
+}
+ 
+#arrow-right {
+    border-width: 20px 0 20px 30px;
+    border-color: transparent transparent transparent #e4e1e188;
+    right: 0;
+    margin-right: 20px;
+}
+    </style>
+    <body>
+       <header>
+            <nav>
+                <div class="logo">
+                    <img src="WBlogo.png" width="58" height="58">
+                </div>
+                <div class="fa fa-bars" id="menu-icon" onclick="myFunction()"></div>
+                <!-----menu----------->
+               <ul class="nav-links">
+                   <li><a class="active">HOME</a></li>
+                    <li><a href="Movies.html">MOVIES</a></li>
+                    <li><a href="TvShows.html">TV SHOWS</a></li>
+                    <li><a href="GamesAndApps.html">GAMES & APPS</a></li>
+                    <li><a href="Collections.html">COLLECTIONS</a></li> 
+                    <li><a href="Feedbackpage.html">FEEDBACK</a></li>
+                </ul>
+                <div class="left">
+                    <i class="fa fa-search"></i>
+                    <span class="line"></span>
+                    <i class="fa fa-globe"></i> <select name="language" id="lan">
+                        <option value="lan">EN</option>
+                        <option value="lan">KR</option>
+                        <option value="lan">AU</option>
+                        <option value="lan">POL</option>
+                    </select>
+                    <button class="btn btn-primary">Sign in</button>
+                </div>
+           </nav>
+        </header>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div id="arrow-left" class="arrow"></div>
+               <div class="slide slide1">
+                <div class="position">
+                    <span>Now Streaming</span>
+                    <h1>Avatar 2: The Way <br>Of Water</h1>
+                    <span>2022 ‧ Sci-fi | Action ‧ 3h 12m</span>
+                    <button class="btn btn-primary"><a href="https://youtu.be/d9MyW72ELq0"><i class="fa fa-play"></i></a>WATCH NOW</button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>WATCH NOW</button>
+                </div>
+               </div>
+               <div class="slide slide2">
+                <div class="position">
+                    <span>Now Streaming</span>
+                    <h1>DUNE 2</h1>
+                    <span>2023 ‧ Sci-fi | Adventure</span>
+                    <button class="btn btn-primary"><i class="fa fa-play"></i>WATCH NOW</button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>WATCH NOW</button>
+                </div>
+               </div>
+               <div class="slide slide3">
+                <div class="position">
+                    <span>In Theaters Now</span>
+                    <h1>Turning RED </h1>
+                    <span>2022 ‧ Fantasy | Comedy ‧ 1h 40m</span>
+                    <button class="btn btn-primary"><i class="fa fa-play"></i>WATCH NOW</button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>WATCH NOW</button>
+                </div>
+               </div>
+               <div class="slide slide4">
+                <div class="position">
+                    <span>Now Streaming</span>
+                    <h1>MEG 2</h1>
+                    <span>2023 ‧ Adventure</span>
+                    <button class="btn btn-primary"><i class="fa fa-play"></i>WATCH NOW</button>
+                    <button class="btn btn-primary"><i class="fa fa-download"></i>WATCH NOW</button>
+                </div>
+               </div>
+               <div id="arrow-right" class="arrow"></div>
+           </div>    
+        </div>
+            
+     <!--------------------------movies--------------->
+       
+            <div class="movies-container">
+               <h1 class="movies-title">COMING SOON</h1>
+              <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="LoveAgain.png">
+                        <img src="LoveAgain.png" alt="Cinque Terre" width="600px" height="600px">
+                      </a>
+                      <div class="desc">Drama | Romance</div>
+                    </div>
+                </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="EvilDeadRise.png">
+                        <img src="EvilDeadRise.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Horror | Drama</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="NoHardFeelings.png">
+                        <img src="NoHardFeelings.png" alt="Northern Lights" width="600px" height="600px">
+                      </a>
+                      <div class="desc">Exclusive in Theaters</div>
+                    </div>
+                  </div>
+                  
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="TrollsBandTogether.png">
+                        <img src="TrollsBandTogether.png" alt="Mountains" width="600px" height="600px">
+                      </a>
+                      <div class="desc"> Animation | Comedy | Kids</div>
+                    </div>
+                  </div>
+                  <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="Aquaman.png">
+                        <img src="Aquaman.png" alt="Mountains" width="600px" height="600px">
+                      </a>
+                      <div class="desc"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+
+            <div class="movies-container">
+                <h1 class="movies-title">MOVIE & TV FAVOURITES</h1>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="LoveAgain.png">
+                        <img src="LoveAgain.png" alt="Cinque Terre" width="600px" height="600px">
+                      </a>
+                      <div class="desc">FRIENDS 
+                        <div class="Star-container">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                       </div>
+                      </div>
+                   </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="TheMatrixRessurections.png">
+                        <img src="TheMatrixRessurections.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Action | Thriller
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="PIB InfoPage.html">
+                        <img src="PussINBoots.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Adventure| Animation 
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="Ginny&Georgia.png">
+                        <img src="Ginny&Georgia.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc"> Young Adult | Drama
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="InTheTallGrass.png">
+                        <img src="InTheTallGrass.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Horror | Drama
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="Journey 2.img 2.png">
+                        <img src="Journey 2.img 2.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Adventure
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="Sausage-Party.png">
+                        <img src="Sausage-Party.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Comedy | Rated R
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+               
+                <div class="responsive">
+                    <div class="gallery">
+                      <a target="_blank" href="AllOfUsAreDead.png">
+                        <img src="AllOfUsAreDead.png" alt="Forest"  width="600px" height="600px">
+                      </a>
+                      <div class="desc">Horror | Foreign
+                        <div class="Star-container">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                           </div>
+                      </div>
+                    </div>
+                </div>
+            <div class="clearfix"></div>
+        
+        </section>  
+        <!--------------------------------------Subscribe Form---------------------------------------->
+        <section>
+            <div class="subscribe-container">
+                <h2>Get Updates</h2>
+                <p>Subscribe to our newsletters and receive all the latest information about our<br> upcoming films and projects right to your inbox.</p>
+                <form action="">
+                    <input type="email" class="email" placeholder="Enter Email..." required>
+                    <input type="Submit" value="Subscribe" class="btn2">
+                </form>
+            </div>
+        </section>
+        <!----------------------------------------Footer------------------------------------------->
+        <footer>
+           
+            <div class="footer-content-wrapper">
+              <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>ABOUT Warner Bros</h3>
+                <a href="#">Senior Management Team</a>
+                <a href="#">WB Tours</a>
+                <a href="#">Company</a>
+                <a href="#">Careers</a>
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>LEGAL</h3>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookie Settings</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Privacy Policy</a>
+               
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>PRESS ROOM</h3>
+                <a href="#">Press Resources</a>
+                <a href="#">Press Releases</a>
+                
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>Follow Us</h3>
+                <div class="row">
+                    <ul style=" list-style: none;
+                    display: flex;
+                    column-gap: 0.6rem;
+                    align-items: center;
+                    " class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+               </div>
+               
+            </div>
+            <div class="clearfix"></div>
+            <div style="line-height: 50px;" class="copyright"><p>TM & &#169; 2023 Warner Bros. Entertainment Inc. All rights Reserved </p></div>
+        </footer>
+            
+   
+    <!---link to custom js-->
+    <script src="Javascript.js"></script>
+    <script>
+        let sliderImages = document.querySelectorAll(".slide"),
+    arrowLeft = document.querySelector("#arrow-left"),
+    arrowRight = document.querySelector("#arrow-right"),
+    current = 0;
+ 
+// Clear all images
+function reset() {
+    for (let i = 0; i < sliderImages.length; i++) {
+        sliderImages[i].style.display = "none";
+    }
+}
+ 
+// Initial slide
+function startSlide() {
+    reset();
+    sliderImages[0].style.display = "block";
+}
+ 
+// Show previous
+function slideLeft() {
+    reset();
+    sliderImages[current - 1].style.display = "block";
+    current--;
+}
+ 
+// Show next
+function slideRight() {
+    reset();
+    sliderImages[current + 1].style.display = "block";
+    current++;
+}
+ 
+// Left arrow click
+arrowLeft.addEventListener("click", function () {
+    if (current === 0) {
+        current = sliderImages.length;
+    }
+    slideLeft();
+});
+ 
+// Right arrow click
+arrowRight.addEventListener("click", function () {
+    if (current === sliderImages.length - 1) {
+        current = -1;
+    }
+    slideRight();
+});
+ 
+startSlide();
+    </script>
+    
+    
+   </body>
+</html>

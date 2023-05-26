@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MOVIES</title>
+        <link rel="stylesheet" href="WB SITE STYLESHEET.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="Javascript.js"></script>
+    </head>
+    <style type="text/css">
+        body{
+            min-height: 100vh;
+            background-image: url(bgimg.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            backdrop-filter: blur(12px) contrast(80%)
+        }
+        input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.txt-center {
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    width: 250px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+   
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\2605";
+    position: absolute;
+    left: 0;
+    color: #FFD700;
+}
+input[type=submit] {
+  
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  float: right;
+  text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 8px 15px;
+    background-color:rgb(247, 27, 27);
+    border-radius: 10px;
+    color: #000;
+}
+.container {
+  border-radius: 5px;
+  padding: 80px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+    </style>
+    <body>
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="WBlogo.png" width="58" height="58">
+                </div>
+                <div class="fa fa-bars" id="menu-icon"></div>
+                <!-----menu----------->
+               <ul class="nav-links">
+                   <li><a href="index.html">HOME</a></li>
+                    <li><a href="Movies.html">MOVIES</a></li>
+                    <li><a href="TvShows.html">TV SHOWS</a></li>
+                    <li><a href="GamesAndApps.html">GAMES & APPS</a></li>
+                    <li><a href="Collections.html">COLLECTIONS</a></li> 
+                    <li><a class="active">FEEDBACK</a></li>
+                </ul>
+                <div class="left">
+                    <i class="fa fa-search"></i>
+                    <span class="line"></span>
+                    <i class="fa fa-globe"></i> <select name="language" id="lan">
+                        <option value="lan">EN</option>
+                        <option value="lan">KR</option>
+                        <option value="lan">AU</option>
+                        <option value="lan">POL</option>
+                    </select>
+                    <button class="btn btn-primary">Sign in</button>
+                </div>
+           </nav>
+        </header>
+        <div style="justify-content: center;
+        display: flex;
+        margin: 50px 60px;" class="container">
+            <form style="width: 40%;" action="action_page.php">
+                <h1> GIVE YOUR FEEDBACK</h1>
+                <div class="row">
+                    <label for="ratings">How would you rate your experience using this site?</label>
+                    <div class="txt-center">
+                        <div class="rating">
+                            <input id="star5" name="star" type="radio" value="5" class="radio-btn hide" />
+                            <label style="font-size: 30px;" for="star5" >☆</label>
+                            <input id="star4" name="star" type="radio" value="4" class="radio-btn hide" />
+                            <label style="font-size: 30px;" for="star4" >☆</label>
+                            <input id="star3" name="star" type="radio" value="3" class="radio-btn hide" />
+                            <label style="font-size: 30px;" for="star3" >☆</label>
+                            <input id="star2" name="star" type="radio" value="2" class="radio-btn hide" />
+                            <label style="font-size: 30px;" for="star2" >☆</label>
+                            <input id="star1" name="star" type="radio" value="1" class="radio-btn hide" />
+                            <label  style="font-size: 30px;"for="star1" >☆</label>
+                            <div class="clear"></div>
+                        </div>    
+                    </div>
+                 </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="fname">Name</label>
+                </div>
+                <div class="col-75">
+                  <input type="text" id="fname" name="name" placeholder="Your name..">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="col-75">
+                  <input style="width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  resize: vertical;" type="email" class="email" name="email" placeholder="Enter Email..." required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-25">
+                  <label  for="country">Country</label>
+                </div>
+                <div class="col-75">
+                  <select style="width: 100%;
+                  padding: 12px;
+                  border: 1px solid #ccc;
+                  border-radius: 4px;
+                  box-sizing: border-box;
+                  resize: vertical;" id="country" name="country">
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                    <option value="usa">USA</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-25">
+                  <label for="subject">Is there anything you'd like us to know?</label>
+                </div>
+                <div class="col-75">
+                  <textarea id="subject" name="subject" placeholder="leave a comment.." style="height:200px"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <input type="submit" value="Submit">
+              </div>
+            </form>
+        </div>
+        
+            
+          <footer>
+           
+            <div class="footer-content-wrapper">
+              <div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>ABOUT Warner Bros</h3>
+                <a href="#">Senior Management Team</a>
+                <a href="#">WB Tours</a>
+                <a href="#">Company</a>
+                <a href="#">Careers</a>
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>LEGAL</h3>
+                <a href="#">Accessibility</a>
+                <a href="#">Cookie Settings</a>
+                <a href="#">Terms Of Use</a>
+                <a href="#">Privacy Policy</a>
+               
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>PRESS ROOM</h3>
+                <a href="#">Press Resources</a>
+                <a href="#">Press Releases</a>
+                
+              </div
+              ><div class="footer-col large-25 small-50 tiny-100 ta-l flt">
+                <h3>Follow Us</h3>
+                <div class="row">
+                    <ul style=" list-style: none;
+                    display: flex;
+                    column-gap: 0.6rem;
+                    align-items: center;
+                    " class="socials">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </div>
+               </div>
+               
+            </div>
+            <div class="clearfix"></div>
+            <div style="line-height: 50px;" class="copyright"><p>TM & &#169; 2023 Warner Bros. Entertainment Inc. All rights Reserved </p></div>
+        </footer>
+            
+    </body>
+</html>   
