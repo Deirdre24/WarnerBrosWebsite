@@ -53,19 +53,28 @@
     <body>
        <header>
             <nav>
-                <div class="logo">
+             
+              <!-----menu----------->
+                <div class="topnav">
+                  <a href="#home" class="active"> <div class="logo">
                     <img src="WBlogo.png" width="58" height="58">
+                  </div></a>
+                  <div id="myLinks">
+                    <ul class="nav-links">
+                      <li><a class="active">HOME</a></li>
+                       <li><a href="Movies.html">MOVIES</a></li>
+                       <li><a href="TvShows.html">TV SHOWS</a></li>
+                       <li><a href="GamesAndApps.html">GAMES & APPS</a></li>
+                       <li><a href="Collections.html">COLLECTIONS</a></li> 
+                       <li><a href="Feedbackpage.html">FEEDBACK</a></li>
+                   </ul>
+                   </div>
+                  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                  </a>
                 </div>
-                <div class="fa fa-bars" id="menu-icon" onclick="myFunction()"></div>
-                <!-----menu----------->
-               <ul class="nav-links">
-                   <li><a class="active">HOME</a></li>
-                    <li><a href="Movies.html">MOVIES</a></li>
-                    <li><a href="TvShows.html">TV SHOWS</a></li>
-                    <li><a href="GamesAndApps.html">GAMES & APPS</a></li>
-                    <li><a href="Collections.html">COLLECTIONS</a></li> 
-                    <li><a href="Feedbackpage.html">FEEDBACK</a></li>
-                </ul>
+
+               
                 <div class="left">
                     <i class="fa fa-search"></i>
                     <span class="line"></span>
@@ -419,8 +428,14 @@ arrowRight.addEventListener("click", function () {
 });
  
 startSlide();
+
+
+
+
+
     </script>
     
+
     
    </body>
 </html>
